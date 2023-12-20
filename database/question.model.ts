@@ -1,7 +1,7 @@
 import { Schema, models, model, Document } from "mongoose";
 
 export interface IQuestion extends Document {
-  titles: string;
+  title: string;
   content: string;
   tags: Schema.Types.ObjectId[];
   views: number;
