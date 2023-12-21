@@ -45,3 +45,25 @@ export const formatNumber = (number: number): string => {
     return number.toString();
   }
 };
+
+export const getJoinedDate = (date: Date): string => {
+  const monthNames: string[] = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  const month: string = monthNames[date.getMonth()];
+  const year: number = date.getFullYear();
+
+  return `${month} ${year}`;
+};
